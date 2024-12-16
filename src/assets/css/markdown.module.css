@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "NotoSanas";
+    src: url('../font/NotoSansKR-VariableFont_wght.ttf') format("truetype");
+}
+
+.reactMarkDown {
+    font-family: 'NotoSanas'
+  }

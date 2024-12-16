@@ -1,11 +1,12 @@
 {
     "1": [
+    ],
+    "2": [
         {
-            "key": "11",
-            "label": "리눅스 하위 테스트",
-            "path": "/study/linux/hello.md"
+            "key": "21",
+            "label": "IAM 이란",
+            "path": "/study/aws/iam/iam.md"
         }
     ],
-    "2": [],
     "3": []
 }
