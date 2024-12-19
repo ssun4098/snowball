@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    UploadOutlined,
+    JavaOutlined,
     LinuxOutlined
   } from '@ant-design/icons';
 import { Layout, Menu, theme } from 'antd';
@@ -14,7 +14,7 @@ const Sidebar = () => {
     const {  Sider } = Layout;
     const [collapsed, setCollapsed] = useState(false);
     const styles = {
-        largeText: { fontSize: '30px' },
+        largeText: { fontSize: '35px' },
     };
     const [markdown, setMarkdown] = useState('');
     const menuMap = getMenuMap(child);;
@@ -51,8 +51,8 @@ const Sidebar = () => {
         },
         {
             key: '3',
-            icon: <UploadOutlined />,
-            label: 'nav 3',
+            icon: <JavaOutlined style={styles.largeText} />,
+            label: 'Java',
         },
     ];
     menuItems.forEach((value) => {
@@ -69,6 +69,7 @@ const Sidebar = () => {
             defaultSelectedKeys={['1']}
             items={menuItems}
             onClick={handleMenu}
+            style={{fontSize: '16px'}}
             />
         </Sider>
         <Layout>

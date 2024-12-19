@@ -3,6 +3,7 @@ import { Layout, theme } from 'antd';
 import style from '../assets/css/markdown.module.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import remarkGfm from 'remark-gfm';
 
 const MyContent = (props) => {
     const {Content} = Layout;
@@ -21,6 +22,7 @@ const MyContent = (props) => {
             }}
         >
 <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
             components={{
                 code({ node, inline, className, children, ...props }) {
                     const match = /language-(\w+)/.exec(className || '');
